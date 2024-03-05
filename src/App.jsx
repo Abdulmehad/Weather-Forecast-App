@@ -13,11 +13,14 @@ function App() {
 
   useEffect(() => {
     // Update state only when weatherData changes
-    setTemperature(weatherData.temp || 0);
-    setHumidity(weatherData.humidity|| 0);
+    setTemperature(weatherData.mainTemp || 0);
+    setHumidity(weatherData.humidity || 0);
     setPressure(weatherData.pressure || 0);
-    setMinTemp(weatherData.temp_min || 0);
-    setMaxTemp(weatherData.temp_max || 0);
+    setMinTemp(weatherData.minTemp || 0);
+    setMaxTemp(weatherData.maxTemp || 0);
+    setPhotoUrl(
+        `http://openweathermap.org/img/wn/${weatherData.weatherIcon}.png`
+    );
   }, [weatherData]);
 
   const handleGetWeather = () => {
