@@ -48,7 +48,7 @@ return(
 }}
    >
   <div className="w-full">
-    <div className="w-full max-w-xl mx-auto border border-gray-60 rounded-lg p-4 backdrop-blur-sm bg-white/30">
+    <div className="w-full max-w-xl mx-auto border border-gray-60 rounded-lg p-4 backdrop-blur-md bg-white/30">
       <div className="flex items-center justify-center h-full">
         <input className="bg-white hover:bg-white text-black font-bold py-2 px-4 rounded mr-2"
           type="text"
@@ -58,18 +58,20 @@ return(
         />
   
           <button
+
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
             onClick={handleGetWeather}
+            onSubmit={handleGetWeather}
           >
             Get Weather
           </button>
 
       </div>
       <div className="flex" style={{ backgroundImage: `url(${photoUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' ,paddingTop:'16px'}}>
-        <div className='w-1/2 p-4 flex flex-col items-center justify-center h-full pt-9'>
+        <div className='w-1/2 p-4 flex flex-col items-center justify-center h-full pt-9 pl-11'>
         <h1 className="text-center font-bold text-6xl">{temperature}°C</h1>
         </div>
-        <div className="w-1/2 p-4  flex flex-col items-center justify-center h-full font-medium">
+        <div className="w-1/2 p-4  flex flex-col items-center justify-center h-full font-semibold">
           <p>Humidity: {humidity}%</p>
           <p>Pressure: {pressure} hPa</p>
           <br />
