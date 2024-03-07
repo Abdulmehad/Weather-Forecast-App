@@ -1,40 +1,33 @@
 import { useEffect, useState } from 'react';
 
-function useWeather(cityname) {
-    console.log(cityname);
-    const [Data, setData] = useState({});
-   
+function useWeather(cityName) {
+    const [data, setData] = useState({});
 
     useEffect(() => {
-        fetchWeather(cityname);
-    }, [cityname]);
+        async function fetchWeather() {
+           try{
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=0b87f35973531b26533f637e0794c8b9`);
+                const weatherData = await response.json();
+                const newData = {
+                    mainTemp: weatherData.main.temp,
+                    humidity: weatherData.main.humidity,
+                    pressure: weatherData.main.pressure,
+                    minTemp: weatherData.main.temp_min,
+                    maxTemp: weatherData.main.temp_max,
+                    weatherIcon: weatherData.weather[0].icon,
+                };
+                setData(newData);
+            }catch(err){
+                setData({});
+            }
+         }
 
+        if (cityName) {
+            fetchWeather();
+        }
+    }, [cityName]);
 
-    async function fetchWeather(cityname) {
-let headersList = {
-    "Accept": "*/*",
-    "User-Agent": "Thunder Client (https://www.thunderclient.com)"
-   }
-   
-   let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=metric&appid=0b87f35973531b26533f637e0794c8b9`, { 
-     method: "GET",
-     headers: headersList
-   });
-   
-   let data1 = await response.json();
-   let data = {
-    mainTemp: data1.main.temp,
-    humidity: data1.main.humidity,
-    pressure: data1.main.pressure,
-    minTemp: data1.main.temp_min,
-    maxTemp: data1.main.temp_max,
-    weatherIcon: data1.weather[0].icon,
-   }    
-    }
-setData(data);
-return Data;
-
+    return data;
 }
-
 
 export default useWeather;
