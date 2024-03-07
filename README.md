@@ -10,8 +10,32 @@ Welcome to the Weather Forecast App, a sophisticated web application meticulousl
 - **Weather Forecast Symbol:** Experience a visually immersive forecast presentation as the app dynamically showcases background visuals representing the current weather conditions.
 
 ## Usage
+1. To see the Live demo of app, follow this Link
 
-To access the Weather Forecast App, simply visit the [live website](https://weathersforecasts.netlify.app/).write the name of the city you want to find the weather of, On the screen, you'll find details such as the current temperature, weather conditions, and an aesthetically pleasing forecast symbol.
+   ```shell[
+   https://passwordgeneratorrrrrr.netlify.app/
+   ```
+   To access the Weather Forecast App, simply visit the [live website](https://weathersforecasts.netlify.app/). Write the name of the city you want to find the weather of, On the screen, you'll find details such as the current temperature, weather conditions, and an aesthetically pleasing forecast symbol.
+
+## Installation
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/Abdulmehad/PasswordGeneartorinReact.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```shell
+   cd PasswordGeneartorinReact
+   ```
+
+3. Install the dependencies:
+
+   ```shell
+   npm install
+   ```
 
 ## Technology Stack
 
