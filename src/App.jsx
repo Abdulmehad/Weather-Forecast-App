@@ -68,7 +68,7 @@ return(
 
       </div>
       <div className="flex" style={{ backgroundImage: `url(${photoUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' ,paddingTop:'16px'}}>
-        <div className='w-1/2 p-4 flex flex-col items-center justify-center h-full pt-9 pl-11'>
+        <div className='w-1/2 p-4 flex flex-col items-center justify-center h-full pt-9'>
         <h1 className="text-center font-bold text-6xl">{temperature}°C</h1>
         </div>
         <div className="w-1/2 p-4  flex flex-col items-center justify-center h-full font-semibold">
