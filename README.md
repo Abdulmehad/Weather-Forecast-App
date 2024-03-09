@@ -13,7 +13,7 @@ Welcome to the Weather Forecast App, a sophisticated web application meticulousl
 1. To see the Live demo of app, follow this Link
 
    ```shell
-  https://weathersforecasts.netlify.app/
+   https://weathersforecasts.netlify.app/
    ```
    To access the Weather Forecast App, simply visit the [live website](https://weathersforecasts.netlify.app/). Write the name of the city you want to find the weather of, On the screen, you'll find details such as the current temperature, weather conditions, and an aesthetically pleasing forecast symbol.
 
