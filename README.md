@@ -1,4 +1,4 @@
-# Professional Weather Forecast Application
+# Weather Forecast Application
 ![Weather Forecast App](ss.png)
 
 Welcome to the Weather Forecast App, a sophisticated web application meticulously crafted by Abdulmehad. This cutting-edge application seamlessly integrates with React and Tailwind CSS, offering users a refined and visually captivating experience. Providing real-time weather forecasts through an API, the Weather Forecast App stands as a testament to Abdulmehad's commitment to delivering accuracy and style in weather information presentation.
@@ -13,7 +13,7 @@ Welcome to the Weather Forecast App, a sophisticated web application meticulousl
 1. To see the Live demo of app, follow this Link
 
    ```shell
-   https://passwordgeneratorrrrrr.netlify.app/
+  https://weathersforecasts.netlify.app/
    ```
    To access the Weather Forecast App, simply visit the [live website](https://weathersforecasts.netlify.app/). Write the name of the city you want to find the weather of, On the screen, you'll find details such as the current temperature, weather conditions, and an aesthetically pleasing forecast symbol.
 
@@ -22,13 +22,13 @@ Welcome to the Weather Forecast App, a sophisticated web application meticulousl
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/Abdulmehad/PasswordGeneartorinReact.git
+   git clone https://github.com/Abdulmehad/Weather-Forecast-App.git
    ```
 
 2. Navigate to the project directory:
 
    ```shell
-   cd PasswordGeneartorinReact
+   cd Weather-Forecast-App
    ```
 
 3. Install the dependencies:
