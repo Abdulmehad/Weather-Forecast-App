@@ -29,7 +29,9 @@ function App() {
 
   const handleGetWeather = () => {
     // Update state only when weatherData changes
-
+    if (Object.keys(weatherData).length === 0) {
+      window.alert('City not found');
+    }
     setTemperature(weatherData.mainTemp || 0);
     setHumidity(weatherData.humidity || 0);
     setPressure(weatherData.pressure || 0);
@@ -80,10 +82,12 @@ return(
         </div>
        
       </div>
+      
     </div>
   </div>
 </div>
 );
 
 }
+
 export default App;
